@@ -22,12 +22,6 @@ class Obd_conn:
         self._func_factory(exec_command)
 
 
-    -connection_info
-                                            -retrieve_errors
-                                            -engine_check
-                                            -check_all
-                                            -trip_speed
-
     def _func_factory(self, command):
         if command == 'connection_info':
             return self.connection_info()
